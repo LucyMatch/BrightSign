@@ -1,6 +1,6 @@
 <!-- https://gist.github.com/smaddock/8881167889f72f0a3880ff1a1f76d33a -->
 <?php
-$serverIP   = '192.168.1.213';
+$serverIP   = '10.0.1.100';
 $serverPort = 5001;
 if ($_REQUEST['cmd']) {
     $socket = socket_create(AF_INET, SOCK_DGRAM, SOL_UDP);

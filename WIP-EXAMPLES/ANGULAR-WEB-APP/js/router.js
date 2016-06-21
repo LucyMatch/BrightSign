@@ -24,4 +24,5 @@ angular.module('app.router', [])
 
         ///redirect to default.
         $urlRouterProvider.otherwise('/');
+        
     })

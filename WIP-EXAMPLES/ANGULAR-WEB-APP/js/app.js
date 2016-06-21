@@ -1,11 +1,13 @@
 var angular = angular || {};
 
-angular.module('myApp', ['ui.router',
+angular.module('myApp', ['ui.router', 'ngTouch',
         'app.router',
         'app.controller.main'
     ])
     .run(function($rootScope){
+
         console.log("RUNNING");
+
 
         $rootScope.global = {};
         $rootScope.global.industries = [{
@@ -29,5 +31,6 @@ angular.module('myApp', ['ui.router',
             industry:   'Oil and Gas',
             udp:        'Five'
         }];
+        
         console.log($rootScope.global.industries);
     })
