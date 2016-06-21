@@ -8,11 +8,20 @@
   height: 75vh;
   width: 100vw;
   position:absolute;
+
+  .map{
+    width:100vw;
+    background-image: url("../media/map.png");
+    background-position:50% 50%;
+    background-size: cover;
+    overflow:hidden;
+    padding-bottom:75%;
+  }
 }
 
 /*NAVIGATION MENU*/
 #nav-menu{
-  background: black;
+  // background: black;
   height: 25vh;
   position: fixed;
   margin-top: 75vh;
@@ -23,11 +32,19 @@
   }
 
   .nav-item{
-    background: blue;
+    // background: blue;
+    height:100%;
   }
 
   .item-cont{
-    background: aqua;
+    // background: aqua;
+    opacity: 1;
+    padding-bottom: 25%;
+  }
+
+  h5, h2 {
+    color: white;
+    font-family: 'helvetica';
   }
 
 }

@@ -2,8 +2,8 @@
 
   <div layout="row" class="main-nav" layout-align="space-around center" >
 
-      <div flex class="nav-item" ng-repeat="ind in inds" ng-click="sendUDP(ind.udp)">
-          <div class="item-cont" layout="column" layout-align="space-around center" layout-margin>
+      <div flex layout="row" layout-align="center center" class="nav-item" ng-repeat="ind in inds" ng-click="sendUDP(ind.udp)">
+          <div flex class="item-cont" layout="column" layout-align="space-around center" layout-margin>
               <h5 class="item-header">{{ind.title}}</h5>
               <h2 class="item-title">{{ind.industry}}</h2>
           </div>

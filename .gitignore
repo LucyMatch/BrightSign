@@ -1,8 +1,7 @@
-##Hide Videos from Repo
-public/video
-public/bower_components
-public/node_modules
+##Hide media from Repo
+./media
 
+.png
 
 # OS generated files #
 ######################

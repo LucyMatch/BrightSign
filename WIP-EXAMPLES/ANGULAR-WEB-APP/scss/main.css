@@ -7,9 +7,17 @@
   position: absolute;
 }
 
+#main-container .map {
+  width: 100vw;
+  background-image: url("../media/map.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+  padding-bottom: 75%;
+}
+
 /*NAVIGATION MENU*/
 #nav-menu {
-  background: black;
   height: 25vh;
   position: fixed;
   margin-top: 75vh;
@@ -21,11 +29,17 @@
 }
 
 #nav-menu .nav-item {
-  background: blue;
+  height: 100%;
 }
 
 #nav-menu .item-cont {
-  background: aqua;
+  opacity: 1;
+  padding-bottom: 25%;
+}
+
+#nav-menu h5, #nav-menu h2 {
+  color: white;
+  font-family: 'helvetica';
 }
 
 /*IDLE*/
