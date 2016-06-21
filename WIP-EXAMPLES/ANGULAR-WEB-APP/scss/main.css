@@ -1,4 +1,38 @@
-body {
-  background: grey; }
+/* ACTIVE STATE */
+/* Main Container for Map */
+#main-container {
+  background: red;
+  height: 75vh;
+  width: 100vw;
+  position: absolute;
+}
+
+/*NAVIGATION MENU*/
+#nav-menu {
+  background: black;
+  height: 25vh;
+  position: fixed;
+  margin-top: 75vh;
+  width: 100vw;
+}
+
+#nav-menu .main-nav {
+  height: 25vh;
+}
+
+#nav-menu .nav-item {
+  background: blue;
+}
+
+#nav-menu .item-cont {
+  background: aqua;
+}
+
+/*IDLE*/
+#idle-cont {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
 
 /*# sourceMappingURL=main.css.map */

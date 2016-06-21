@@ -1,7 +1,14 @@
-<div id="nav-menu" class="row">
+<div id="nav-menu">
 
-    <div class="columns">
+  <div layout="row" class="main-nav" layout-align="space-around center" >
 
-    </div>
+      <div flex class="nav-item" ng-repeat="ind in inds" ng-click="sendUDP(ind.udp)">
+          <div class="item-cont" layout="column" layout-align="space-around center" layout-margin>
+              <h5 class="item-header">{{ind.title}}</h5>
+              <h2 class="item-title">{{ind.industry}}</h2>
+          </div>
+      </div>
+
+  </div>
 
 </div>

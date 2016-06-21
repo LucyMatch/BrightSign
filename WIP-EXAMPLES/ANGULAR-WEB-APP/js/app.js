@@ -2,8 +2,7 @@ var angular = angular || {};
 
 angular.module('myApp', ['ui.router',
         'app.router',
-        'app.controller.basic'
-
+        'app.controller.main'
     ])
     .run(function($rootScope){
         console.log("RUNNING");
@@ -30,4 +29,5 @@ angular.module('myApp', ['ui.router',
             industry:   'Oil and Gas',
             udp:        'Five'
         }];
+        console.log($rootScope.global.industries);
     })

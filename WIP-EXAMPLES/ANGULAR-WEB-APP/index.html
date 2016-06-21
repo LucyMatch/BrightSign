@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS -->
     <link rel="stylesheet" href="css/angular-material.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="scss/main.css">
 
 </head>
 
@@ -13,6 +13,7 @@
 
     <!-- ui-view is where our templates go -->
     <div ui-view id="app-container"></div>
+    <div ui-view="navigation" id="nav-container"></div>
 
 
     <!--EVENTUALLY SHOULD HAVE DIST. V WHERE THESE ARE UGLIFIED & COMBINED....-->
@@ -23,16 +24,16 @@
     <script type="text/javascript" src="scripts/angular-ui-router.min.js"></script>
     <script type="text/javascript" src="scripts/angular-material.js"></script>
 
-    <!--<script type="text/javascript" src="scripts/angular-animate.min.js"></script>-->
-    <!--<script type="text/javascript" src="scripts/angular-aria.min.js"></script>-->
-    <!--<script type="text/javascript" src="scripts/angular-touch.min.js"></script>-->
+    <!-- <script type="text/javascript" src="scripts/angular-animate.min.js"></script>
+    <script type="text/javascript" src="scripts/angular-aria.min.js"></script>
+    <script type="text/javascript" src="scripts/angular-touch.min.js"></script> -->
 
 
 <!-- ////////////////////////////////////////////////
     //////// SCRIPTS -->
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/router.js"></script>
-    <script type="text/javascript" src="js/controllers/basic.js"></script>
+    <script type="text/javascript" src="js/controllers/main.js"></script>
 
     <!--<script type="text/javascript" src="js/controllers/main.js"></script>-->
     <!--<script type="text/javascript" src="js/controllers/navigation.js"></script>-->
