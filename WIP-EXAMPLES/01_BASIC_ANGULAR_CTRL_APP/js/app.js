@@ -1,10 +1,14 @@
 var angular = angular || {};
 
-angular.module('myApp', ['ui.router',
+angular.module('myApp', ['ui.router', 'ngTouch',
         'app.router',
         'app.controller.basic'
 
     ])
+    .config(function($touchProvider){
+        console.log($touchProvider);
+        $touchProvider.ngClickOverrideEnabled('enabled');
+    })
     .run(function($rootScope){
         console.log("RUNNING");
 

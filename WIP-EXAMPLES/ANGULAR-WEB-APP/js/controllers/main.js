@@ -6,38 +6,43 @@ angular.module('app.controller.main', [])
     console.log('MAIN CONTROLLER');
 
 
-
-    //for touchscreen
-
-    console.log($touch.ngClickOverrideEnabled());
-    console.log($touch.ngClickOverrideEnabled());
-
     //set active industry to null
-    $scope.active_ind = null;
+    $scope.active_ind = "nothing slected";
     $scope.active_ind_state = false;
     //assign global list of industry data to current scope
     $scope.inds = $rootScope.global.industries;
 
 
+    console.log($touch.ngClickOverrideEnabled());
+
 
 
   //NAVIGATION / MENU
-  // $scope.industryBtn = function(id){
-  //     console.log('selected ind: '+ id);
-  //     //get the selected industry's id & assign to Active
-  //     $scope.active_ind = $scope.ind[id];
-  //     $scope.active_ind_state = true;
-  //     //then we need to update location w/ the id in url
-  //     //to display the right response on the main-section of the screen
-  //     //a btn will display here to trigger the UDP and Media Playback
-  // }
+  $scope.industryBtn = function(id){
+      console.log('selected ind: '+ id);
+      //get the selected industry's id & assign to Active
+      $scope.active_ind = $scope.inds[id];
+      $scope.active_ind_state = true;
+
+      if($scope.activeId == id){
+          
+      };
+
+      //then we need to update location w/ the id in url
+      //to display the right response on the main-section of the screen
+      //a btn will display here to trigger the UDP and Media Playback
+  }
+
+
 
   //FUNCTION TO SEND UDP VIA HTTP
   $scope.sendUDP = function(msg){
         console.log(msg);
 
+        $scope.active_ind = msg;
+
         $http({
-            url: '../../scripts/udp.php',
+            url: 'scripts/udp.php',
             method: "GET",
             params: {cmd: msg}
         }).then(function success(res){

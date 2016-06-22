@@ -2,9 +2,11 @@
 
     <div layout="row" class="main-nav">
 
-        <div flex class="nav-item" ng-repeat="industry in industries" ng-click="sendUDP(industry.udp)">
-            <div>
+        <!--<div flex class="nav-item" ng-repeat="industry in industries" ng-click="sendUDP(industry.udp, $event)">-->
+        <div flex class="nav-item" ng-repeat="industry in industries" ng-click="sendUDP(industry.udp, $event)">
+            <div >
                 <h2 class="item-title">{{industry.title}}</h2>
+                <h3 ng-show="display">{{industry.industry}}</h3>
             </div>
         </div>
 

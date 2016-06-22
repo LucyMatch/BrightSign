@@ -4,6 +4,10 @@ angular.module('myApp', ['ui.router', 'ngTouch',
         'app.router',
         'app.controller.main'
     ])
+    .config(function($touchProvider){
+        console.log($touchProvider);
+        $touchProvider.ngClickOverrideEnabled('enabled');
+    })
     .run(function($rootScope){
 
         console.log("RUNNING");

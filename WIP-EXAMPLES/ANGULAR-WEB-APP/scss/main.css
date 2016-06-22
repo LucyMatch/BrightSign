@@ -1,52 +1,56 @@
+/*
+* BRIGHTSIGN MEDIA PLAYER WEB APP
+*/
 /* ACTIVE STATE */
 /* Main Container for Map */
 #main-container {
   background: red;
   height: 75vh;
   width: 100vw;
-  position: absolute;
-}
-
-#main-container .map {
-  width: 100vw;
-  background-image: url("../media/map.png");
-  background-position: 50% 50%;
-  background-size: cover;
-  overflow: hidden;
-  padding-bottom: 75%;
-}
+  position: absolute; }
+  #main-container .map {
+    width: 100vw;
+    background-image: url("../media/map.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 75%; }
 
 /*NAVIGATION MENU*/
 #nav-menu {
   height: 25vh;
   position: fixed;
   margin-top: 75vh;
-  width: 100vw;
-}
-
-#nav-menu .main-nav {
-  height: 25vh;
-}
-
-#nav-menu .nav-item {
-  height: 100%;
-}
-
-#nav-menu .item-cont {
-  opacity: 1;
-  padding-bottom: 25%;
-}
-
-#nav-menu h5, #nav-menu h2 {
-  color: white;
-  font-family: 'helvetica';
-}
+  width: 100vw; }
+  #nav-menu .main-nav {
+    height: 25vh; }
+  #nav-menu .nav-item {
+    height: 100%; }
+  #nav-menu .item-cont {
+    background: aqua;
+    opacity: 1;
+    padding-bottom: 25%;
+    height: 20vh; }
+  #nav-menu #submitBtn {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 0, 0, 0.5);
+    border: 0px; }
+  #nav-menu h2 {
+    color: white;
+    font-family: 'helvetica', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    text-align: center;
+    z-index: 101; }
+  #nav-menu .active {
+    background: yellow; }
 
 /*IDLE*/
 #idle-cont {
   height: 100vh;
   width: 100vw;
-  position: absolute;
-}
+  position: absolute; }
 
 /*# sourceMappingURL=main.css.map */

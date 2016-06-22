@@ -8,4 +8,7 @@ angular.module('app.router', [])
             templateUrl:'views/basic.html',
             controller: 'BasicCtrl'
         })
+
+        ///redirect to default.
+        $urlRouterProvider.otherwise('/');
     })
