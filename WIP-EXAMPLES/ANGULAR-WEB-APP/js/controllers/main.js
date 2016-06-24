@@ -5,42 +5,53 @@ angular.module('app.controller.main', [])
 
     console.log('MAIN CONTROLLER');
 
+    //          S C O P E  V A R S
+    // ---------------------------
+
     //assign global list of industry data to current scope
     $scope.inds = $rootScope.global.industries;
+    $scope.active = false;
+    $scope.active_i = {};
 
-    //set active industry to null
-    $scope.active_ind;
-    $scope.active_ind_state = false;
-    //assign global list of industry data to current scope
-    $scope.inds = $rootScope.global.industries;
+    //                     F U N C
+    // ---------------------------
+    // @TO DO: INDUSTRY ACTIVE BTN
+    // rather than two seperate functions for btn - both will fire at same time!
+    // run them through a general ACTIVATE INDUSTRY BTN
+    // --- recieves $index of selected industry
+    // --- active state - true/false
 
-    $scope.udp;
-
-
-    console.log($touch.ngClickOverrideEnabled());
-
-
+//                EVENTUALLY DELETE
+// ------------------------------------------------------------------------
+// vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+// ------------------------------------------------------------------------
+// -------------------------- @TO DO: keep here until other way working...
 
   //NAVIGATION / MENU
   $scope.industryBtn = function(id){
       console.log('selected ind: '+ id);
-      //get the selected industry's id & assign to Active
-      // $scope.active_ind = $scope.inds[id];
-      // $scope.active_ind_state = true;
 
-      if($scope.activeId !== id && id <= $scope.inds.length ){
-          $scope.activeId = id;
-          $scope.active_ind = $scope.inds[id];
-          // $scope.active_ind_state = true;
-      }else if($scope.active_udp == $scope.active_ind.udp){
-          console.log("Playing Video!");
-          return;
+      //get the selected industry's id & assign to Active
+      // temp active info -- assign to scope once confirmed
+      var _active_i = {
+          id:       id,
+          udp:      $scope.inds.[id].udp,
+          industry: $scope.inds.[id].industry,
+          content:  ["../assets/test-overlay-active.png"] //dummy for now will asign this in app.js
+      };
+
+      if($scope.active_i.id !== id && id <= $scope.inds.length ){
+          //assign active industry to scope
+          $scope.active_i = _active_i;
+          $scope.active = true;
+          console.log("NEW ACTIVE STATE: " + $scope.active_i);
+
       }else{
-          $scope.activeId = 50;
-          $scope.active_ind = "nothing selected";
-          $scope.active_ind_state = false;
+          $scope.active_i = {};
+          $scope.active = false;
+          console.log($scope.active_i);
       }
-      console.log($scope.active_ind);
+
       //then we need to update location w/ the id in url
       //to display the right response on the main-section of the screen
       //a btn will display here to trigger the UDP and Media Playback
