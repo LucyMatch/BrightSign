@@ -2,7 +2,8 @@ var angular = angular || {};
 
 angular.module('myApp', ['ui.router', 'ngTouch',
         'app.router',
-        'app.controller.main'
+        'app.controller.main',
+        'app.udp.factory'
     ])
     .config(function($touchProvider){
         console.log($touchProvider);
@@ -11,7 +12,6 @@ angular.module('myApp', ['ui.router', 'ngTouch',
     .run(function($rootScope){
 
         console.log("RUNNING");
-
 
         $rootScope.global = {};
         $rootScope.global.industries = [{

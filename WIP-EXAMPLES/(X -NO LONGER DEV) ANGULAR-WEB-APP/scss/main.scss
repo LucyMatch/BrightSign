@@ -35,7 +35,7 @@ html {
 }
 
 .border{
-  border-left: 3pt;
+  border-left: 1pt;
   border-left-style: solid;
   border-left-color: $white;
 }
@@ -64,7 +64,7 @@ html {
   background: $primary-blue;
   height: 25vh;
   position: fixed;
-  margin-top: 75vh;
+  margin-top: 75vh; //orig 75
   width: 100vw;
 
   .main-nav{
@@ -101,7 +101,7 @@ html {
   .active{
     background: $white;
     z-index: 200;
-    // height:30vh;
+    height:30vh;
 
       .item-cont{
         background: $white;

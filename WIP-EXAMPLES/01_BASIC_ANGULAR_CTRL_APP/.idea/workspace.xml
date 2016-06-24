@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e249ee59-44fc-42c4-97b1-6262b875494c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ANGULAR-WEB-APP/scss/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ANGULAR-WEB-APP/scss/main.css.map" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/basic.js" afterPath="$PROJECT_DIR$/js/controllers/basic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/router.js" afterPath="$PROJECT_DIR$/js/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/basic.html" afterPath="$PROJECT_DIR$/views/basic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ANGULAR-WEB-APP/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ANGULAR-WEB-APP/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ANGULAR-WEB-APP/index.html" afterPath="$PROJECT_DIR$/../ANGULAR-WEB-APP/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ANGULAR-WEB-APP/js/app.js" afterPath="$PROJECT_DIR$/../ANGULAR-WEB-APP/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ANGULAR-WEB-APP/js/controllers/main.js" afterPath="$PROJECT_DIR$/../ANGULAR-WEB-APP/js/controllers/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ANGULAR-WEB-APP/scss/main.scss" afterPath="$PROJECT_DIR$/../ANGULAR-WEB-APP/scss/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ANGULAR-WEB-APP/views/idle.html" afterPath="$PROJECT_DIR$/../ANGULAR-WEB-APP/views/idle.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ANGULAR-WEB-APP/views/main-screen.html" afterPath="$PROJECT_DIR$/../ANGULAR-WEB-APP/views/main-screen.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ANGULAR-WEB-APP/views/navigation.html" afterPath="$PROJECT_DIR$/../ANGULAR-WEB-APP/views/navigation.html" />
-    </list>
+    <list default="true" id="e249ee59-44fc-42c4-97b1-6262b875494c" name="Default" comment="" />
     <ignored path="BS_REMOTE_APP_01.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
