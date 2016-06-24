@@ -3,8 +3,19 @@
 * @desc   Main SASS File
 */
 h1 {
-  font-size: 19pt;
+  font-size: 14pt;
   font-family: "Avenir";
+}
+
+body,
+html {
+  position: fixed;
+}
+
+.border {
+  border-left: 3pt;
+  border-left-style: solid;
+  border-left-color: #ffffff;
 }
 
 /* ACTIVE STATE */
@@ -45,7 +56,7 @@ h1 {
 #nav-menu .item-cont {
   opacity: 1;
   padding-bottom: 25%;
-  height: 20vh;
+  height: 25vh;
 }
 
 #nav-menu .item-title {
@@ -53,13 +64,12 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   z-index: 101;
-  margin-top: 12.8vh;
   width: 70%;
 }
 
 #nav-menu .active {
   background: #ffffff;
-  height: 30vh;
+  z-index: 200;
 }
 
 #nav-menu .active .item-cont {
@@ -69,7 +79,6 @@ h1 {
 #nav-menu .active .item-title {
   color: #005cb9;
   font-weight: bolder;
-  margin-top: 0.6em;
 }
 
 #nav-menu .active .item-thumb {
