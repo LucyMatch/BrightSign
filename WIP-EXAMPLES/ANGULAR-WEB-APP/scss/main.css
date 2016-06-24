@@ -1,56 +1,90 @@
 /*
 * BRIGHTSIGN MEDIA PLAYER WEB APP
+* @desc   Main SASS File
 */
+h1 {
+  font-size: 19pt;
+  font-family: "Avenir";
+}
+
 /* ACTIVE STATE */
 /* Main Container for Map */
 #main-container {
-  background: red;
+  background: #14294b;
   height: 75vh;
   width: 100vw;
-  position: absolute; }
-  #main-container .map {
-    width: 100vw;
-    background-image: url("../media/map.png");
-    background-position: 50% 50%;
-    background-size: cover;
-    overflow: hidden;
-    padding-bottom: 75%; }
+  position: absolute;
+}
+
+#main-container .map {
+  width: 100vw;
+  height: 100%;
+  background-image: url("../assets/map-only.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+}
 
 /*NAVIGATION MENU*/
 #nav-menu {
+  background: #14294b;
   height: 25vh;
   position: fixed;
   margin-top: 75vh;
-  width: 100vw; }
-  #nav-menu .main-nav {
-    height: 25vh; }
-  #nav-menu .nav-item {
-    height: 100%; }
-  #nav-menu .item-cont {
-    background: aqua;
-    opacity: 1;
-    padding-bottom: 25%;
-    height: 20vh; }
-  #nav-menu #submitBtn {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(100, 0, 0, 0.5);
-    border: 0px; }
-  #nav-menu h2 {
-    color: white;
-    font-family: 'helvetica', sans-serif;
-    font-size: 1em;
-    text-transform: uppercase;
-    letter-spacing: 0.25em;
-    text-align: center;
-    z-index: 101; }
-  #nav-menu .active {
-    background: yellow; }
+  width: 100vw;
+}
+
+#nav-menu .main-nav {
+  height: 25vh;
+}
+
+#nav-menu .nav-item {
+  height: 100%;
+}
+
+#nav-menu .item-cont {
+  opacity: 1;
+  padding-bottom: 25%;
+  height: 20vh;
+}
+
+#nav-menu .item-title {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 101;
+  margin-top: 12.8vh;
+  width: 70%;
+}
+
+#nav-menu .active {
+  background: #ffffff;
+  height: 30vh;
+}
+
+#nav-menu .active .item-cont {
+  background: #ffffff;
+}
+
+#nav-menu .active .item-title {
+  color: #005cb9;
+  font-weight: bolder;
+  margin-top: 0.6em;
+}
+
+#nav-menu .active .item-thumb {
+  height: 12.8vh;
+  width: 90%;
+  margin-top: 12%;
+}
+
+#nav-menu .active img {
+  width: 100%;
+}
 
 /*IDLE*/
 #idle-cont {
   height: 100vh;
   width: 100vw;
-  position: absolute; }
-
-/*# sourceMappingURL=main.css.map */
+  position: absolute;
+}

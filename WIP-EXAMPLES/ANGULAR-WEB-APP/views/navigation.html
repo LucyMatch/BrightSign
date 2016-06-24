@@ -1,19 +1,12 @@
 <div id="nav-menu">
 
   <div layout="row" class="main-nav" layout-align="space-around center" >
-
-      <!--WORKS! BUT DIRECT CLICK TO UDP-->
-      <!--<div flex layout="row" layout-align="center center" class="nav-item" ng-repeat="ind in inds" ng-click="sendUDP(ind.udp)">-->
-          <!--<div flex class="item-cont" layout="column" layout-align="space-around center" layout-margin>-->
-              <!--&lt;!&ndash;<h5 class="item-header">{{ind.title}}</h5>&ndash;&gt;-->
-              <!--<h2 class="item-title">{{ind.industry}}</h2>-->
-          <!--</div>-->
-      <!--</div>-->
-
-      <div flex layout="row" layout-align="center center" class="nav-item" ng-class="{active : activeId === $index}" ng-repeat="ind in inds" ng-click="industryBtn($index)">
-          <div flex class="item-cont" layout="column" layout-align="space-around center" layout-margin>
-              <!--<h5 class="item-header">{{ind.title}}</h5>-->
-              <h2 class="item-title">{{ind.industry}}</h2>
+      <div flex class="nav-item" ng-class="{active : activeId === $index}" ng-repeat="ind in inds" ng-click="industryBtn($index)" layout="row" layout-align="center start" >
+          <div flex class="item-cont" layout="column" layout-align="space-between center" layout-margin>
+              <div ng-show="activeId === $index" class="item-thumb" ng-click="sendUDP(ind.udp)">
+                <img src="http://placehold.it/500x281">
+              </div>
+              <h1 class="item-title">{{ind.industry}}</h1>
           </div>
       </div>
 
@@ -23,3 +16,10 @@
 
 <!--SCRATCH-->
 
+<!--WORKS! BUT DIRECT CLICK TO UDP-->
+<!--<div flex layout="row" layout-align="center center" class="nav-item" ng-repeat="ind in inds" ng-click="sendUDP(ind.udp)">-->
+    <!--<div flex class="item-cont" layout="column" layout-align="space-around center" layout-margin>-->
+        <!--&lt;!&ndash;<h5 class="item-header">{{ind.title}}</h5>&ndash;&gt;-->
+        <!--<h2 class="item-title">{{ind.industry}}</h2>-->
+    <!--</div>-->
+<!--</div>-->

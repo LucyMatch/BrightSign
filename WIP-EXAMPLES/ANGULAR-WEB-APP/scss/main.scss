@@ -1,28 +1,57 @@
 /*
 * BRIGHTSIGN MEDIA PLAYER WEB APP
+* @desc   Main SASS File
 */
+
+//                   P A T H S
+// ---------------------------
+  $imagesPath: "../assets";
+  $fontsPath: "../assets/fonts"; //need the right file types
+
+//                 G L O B A L
+// ---------------------------
+
+$white: #ffffff;
+$primary-blue:    #14294b;
+$secondary-dark-blue:  #005cb9;
+
+$primary-font: 'Avenir';
+$primary-font-medium: 'Avenir';
+
+$primary-font-size: 19pt;
+//$title-font-size: 33pt; //this is start btn on idle - should really just import that btn but justin case!
+
+h1{
+  font-size: 19pt;
+  font-family:$primary-font;
+}
+
+//                 S C R E E N
+// ---------------------------
+
+
 
 /* ACTIVE STATE */
 /* Main Container for Map */
 #main-container{
-  background: red;
+  background: $primary-blue;
   height: 75vh;
   width: 100vw;
   position:absolute;
 
   .map{
     width:100vw;
-    background-image: url("../media/map.png");
+    height: 100%;
+    background-image: url("../assets/map-only.png");
     background-position:50% 50%;
     background-size: cover;
     overflow:hidden;
-    padding-bottom:75%;
   }
 }
 
 /*NAVIGATION MENU*/
 #nav-menu{
-  //background: black;
+  background: $primary-blue;
   height: 25vh;
   position: fixed;
   margin-top: 75vh;
@@ -38,35 +67,47 @@
   }
 
   .item-cont{
-    background: aqua;
+    // background: aqua;
     opacity: 1;
     padding-bottom: 25%;
     height: 20vh;
   }
 
-  #submitBtn{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(100,0,0,0.5);
-    border: 0px;
-  }
-
-  h2{
+  .item-title{
     color: white;
-    font-family: 'helvetica', sans-serif;
-    font-size: 1em;
+    //font-size: 2.3rem;
     text-transform: uppercase;
-    letter-spacing: 0.25em;
     text-align: center;
     z-index: 101;
+    margin-top: 12.8vh;
+    width: 70%;
   }
 
+  //WHEN BTN MOUSEDOWN HELD
   //.ng-click-active{
   //  //background: yellow;
   //}
 
   .active{
-    background: yellow;
+    background: $white;
+    height:30vh;
+
+      .item-cont{
+        background: $white;
+      }
+      .item-title{
+        color: $secondary-dark-blue;
+        font-weight: bolder;
+        margin-top: 0.6em;
+      }
+      .item-thumb{
+        height: 12.8vh;
+        width: 90%;
+        margin-top: 12%;
+      }
+      img{
+        width: 100%;
+      }
   }
 
 }
